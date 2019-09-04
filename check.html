@@ -106,7 +106,7 @@ body>ul:nth-child(8)>li{
 </style>
 <body>
 <span>全国驼奶查询系统</span>
-<h1>骆驼奶限时优惠查询系统</h1>
+<h1>那拉乳业限时优惠查询系统</h1>
 <div>
 <input type="text" name="city" placeholder="请输入您要查询的省份"><button onclick="check()">查询</button>
 </div>
@@ -120,6 +120,11 @@ body>ul:nth-child(8)>li{
 <li><span class = 'city'></span>  <span class = 'name3'></span>  <span class = 'tp3'></span> </li>
 <li><span class = 'city'></span>  <span class = 'name4'></span>  <span class = 'tp4'></span> </li>
 <li><span class = 'city'></span>  <span class = 'name5'></span>  <span class = 'tp5'></span> </li>
+<li><span class = 'city'></span>  <span class = 'name6'></span>  <span class = 'tp6'></span> </li>
+<li><span class = 'city'></span>  <span class = 'name7'></span>  <span class = 'tp7'></span> </li>
+<li><span class = 'city'></span>  <span class = 'name8'></span>  <span class = 'tp8'></span> </li>
+<li><span class = 'city'></span>  <span class = 'name9'></span>  <span class = 'tp9'></span> </li>
+<li><span class = 'city'></span>  <span class = 'name10'></span>  <span class = 'tp10'></span> </li>	
 </ul>
 </body>
 <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
@@ -149,13 +154,23 @@ var name = new Array(
     $('.name3').html(name[Math.round(Math.random()*99)]+'XX'); 
     $('.name4').html(name[Math.round(Math.random()*99)]+'XX'); 
     $('.name5').html(name[Math.round(Math.random()*99)]+'XX'); 
+    $('.name6').html(name[Math.round(Math.random()*99)]+'XX'); 
+    $('.name7').html(name[Math.round(Math.random()*99)]+'XX'); 
+    $('.name8').html(name[Math.round(Math.random()*99)]+'XX'); 
+    $('.name9').html(name[Math.round(Math.random()*99)]+'XX'); 
+    $('.name10').html(name[Math.round(Math.random()*99)]+'XX'); 	
 var tp = new Array("139","138","137","136","135","134","159","158","157","150","151","152","188","187","182","183","184","178","130","131","132","156","155","186","185","176","133","153","189","180","181","177"); 
-var cass = new Array(" 订购一年 (个人名义)"," 订购一年 (家庭名义)"); 
+var cass = new Array(" 订购一年 (个人名义)"," 订购一年 (家庭名义)"," 订购半年 (个人名义)"," 订购半年 (家庭名义)"" 订购两年 (个人名义)"," 订购两年 (家庭名义)"); 
     $('.tp1').html(tp[Math.round(Math.random()*30)+1]+'XXXX'+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+cass[Math.ceil(Math.random()*1)]); 
     $('.tp2').html(tp[Math.round(Math.random()*30)+1]+'XXXX'+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+cass[Math.ceil(Math.random()*1)]); 
     $('.tp3').html(tp[Math.round(Math.random()*30)+1]+'XXXX'+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+cass[Math.ceil(Math.random()*1)]); 
     $('.tp4').html(tp[Math.round(Math.random()*30)+1]+'XXXX'+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+cass[Math.ceil(Math.random()*1)]); 
     $('.tp5').html(tp[Math.round(Math.random()*30)+1]+'XXXX'+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+cass[Math.ceil(Math.random()*1)]); 
+    $('.tp6').html(tp[Math.round(Math.random()*30)+1]+'XXXX'+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+cass[Math.ceil(Math.random()*1)]); 
+    $('.tp7').html(tp[Math.round(Math.random()*30)+1]+'XXXX'+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+cass[Math.ceil(Math.random()*1)]); 
+    $('.tp8').html(tp[Math.round(Math.random()*30)+1]+'XXXX'+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+cass[Math.ceil(Math.random()*1)]); 
+    $('.tp9').html(tp[Math.round(Math.random()*30)+1]+'XXXX'+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+cass[Math.ceil(Math.random()*1)]); 
+    $('.tp10').html(tp[Math.round(Math.random()*30)+1]+'XXXX'+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+cass[Math.ceil(Math.random()*1)]); 	
 }
 </script>
 </html>
