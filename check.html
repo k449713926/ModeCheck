@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>全国驼奶查询系统</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="wap-font-scale" content="no">
+    <meta name="apple-mobile-web-app-title" content="全国驼奶查询系统">
+</head>
+<style type="text/css">
+body{
+	background-image:url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567591515604&di=c78f13945aa1ee4afc9037a77a700f1d&imgtype=0&src=http%3A%2F%2Fs9.sinaimg.cn%2Fmw690%2F001A8F8Gzy6L5GmiBrG98');
+	background-repeat: no-repeat;   
+    background-size: 100% 100%;   
+    height: 650px;  
+}
+body>span:nth-child(1)
+{
+    color:red;
+    font-size: 19px;
+}
+body>h1:nth-child(2)
+{
+    color:red;
+    font-size: 30px;
+    text-align: center;
+}
+body>h1:nth-child(2)
+{
+    color:red;
+    font-size: 30px;
+    text-align: center;
+}
+body>div:nth-child(3)
+{
+	width: 300px;
+	margin:0 auto;
+}
+body>div:nth-child(3)>input:nth-child(1)
+{
+    width: 220px;
+    outline:none;  
+    border:none;
+	height: 25px
+
+}
+body>div:nth-child(3)>button:nth-child(2)
+{
+    width: 70px;
+    height: 27px;
+    outline:none;  
+    border:none;
+    margin-left: 5px;
+    background-color: #5599ff;
+
+}
+body>p:nth-child(4)
+{
+    text-align: center;
+    font-size: 18px;  
+    font-weight:bold;
+}
+body>p:nth-child(5)
+{
+    text-align: center;
+    font-size: 18px;  
+    font-weight:bold;        
+}
+body>p:nth-child(6)
+{
+    text-align: center;
+    font-size: 18px;    
+    font-weight:bold;    
+}
+body>div:nth-child(7)
+{
+background-color:#000;
+opacity:0.3;
+text-align:center;
+height: 120px;
+width: 380PX;
+position:fixed;
+top: 310px;
+left: 50%;
+margin-left: -190px;
+z-index:-1;
+border-radius: 10px;
+}
+body>ul:nth-child(8)
+{
+z-index:10;
+opacity:1;
+list-style: none;
+color: #FFF;
+height: 100px;
+padding: 0;
+}
+body>ul:nth-child(8)>li{
+    text-align: center;
+}
+.red{color: red;}
+.num{font-size: 30px;}
+</style>
+<body>
+<span>全国驼奶查询系统</span>
+<h1>骆驼奶限时优惠查询系统</h1>
+<div>
+<input type="text" name="city" placeholder="请输入您要查询的省份"><button onclick="check()">查询</button>
+</div>
+<p>您所查的省份：<span class="red city"></span></p>
+<p>已消耗名额：<span class="red num lou"></span>名</p>
+<p>剩余名额：<span class="red num up"></span>名</p>
+<div></div>
+<ul>
+<li><span class = 'city'></span>  <span class = 'name1'></span>  <span class = 'tp1'></span> </li>
+<li><span class = 'city'></span>  <span class = 'name2'></span>  <span class = 'tp2'></span> </li>
+<li><span class = 'city'></span>  <span class = 'name3'></span>  <span class = 'tp3'></span> </li>
+<li><span class = 'city'></span>  <span class = 'name4'></span>  <span class = 'tp4'></span> </li>
+<li><span class = 'city'></span>  <span class = 'name5'></span>  <span class = 'tp5'></span> </li>
+</ul>
+</body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript">
+function check() {
+var city = $(" input[ name='city' ] ").val();
+    $('.city').html(city);   
+var up = Math.round(Math.random()*20);
+    $('.up').html(up+1);   
+var lou = 100-up;
+    $('.lou').html(lou); 
+var name = new Array(
+"赵", "钱", "孙", "李", "周", "吴", "郑", "王", "冯", "陈", 
+"褚", "卫", "蒋", "沈", "韩", "杨", "朱", "秦", "尤", "许",
+"何", "吕", "施", "张", "孔", "曹", "严", "华", "金", "魏", 
+"陶", "姜", "戚", "谢", "邹", "喻", "柏", "水", "窦", "章",
+"云", "苏", "潘", "葛", "奚", "范", "彭", "郎", "鲁", "韦", 
+"昌", "马", "苗", "凤", "花", "方", "俞", "任", "袁", "柳",
+"酆", "鲍", "史", "唐", "费", "廉", "岑", "薛", "雷", "贺", 
+"倪", "汤", "滕", "殷", "罗", "毕", "郝", "邬", "安", "常",
+"乐", "于", "时", "傅", "皮", "卞", "齐", "康", "伍", "余", 
+"元", "卜", "顾", "孟", "平", "黄", "和", "穆", "萧", "尹"
+);
+
+    $('.name1').html(name[Math.round(Math.random()*99)]+'XX'); 
+    $('.name2').html(name[Math.round(Math.random()*99)]+'XX'); 
+    $('.name3').html(name[Math.round(Math.random()*99)]+'XX'); 
+    $('.name4').html(name[Math.round(Math.random()*99)]+'XX'); 
+    $('.name5').html(name[Math.round(Math.random()*99)]+'XX'); 
+var tp = new Array("139","138","137","136","135","134","159","158","157","150","151","152","188","187","182","183","184","178","130","131","132","156","155","186","185","176","133","153","189","180","181","177"); 
+var cass = new Array(" 订购一年 (个人名义)"," 订购一年 (家庭名义)"); 
+    $('.tp1').html(tp[Math.round(Math.random()*30)+1]+'XXXX'+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+cass[Math.ceil(Math.random()*1)]); 
+    $('.tp2').html(tp[Math.round(Math.random()*30)+1]+'XXXX'+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+cass[Math.ceil(Math.random()*1)]); 
+    $('.tp3').html(tp[Math.round(Math.random()*30)+1]+'XXXX'+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+cass[Math.ceil(Math.random()*1)]); 
+    $('.tp4').html(tp[Math.round(Math.random()*30)+1]+'XXXX'+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+cass[Math.ceil(Math.random()*1)]); 
+    $('.tp5').html(tp[Math.round(Math.random()*30)+1]+'XXXX'+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+Math.round(Math.random()*9)+cass[Math.ceil(Math.random()*1)]); 
+}
+</script>
+</html>
